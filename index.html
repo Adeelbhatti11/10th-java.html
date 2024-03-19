@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["adeel ", 18 , " good " , true];
+        document.write(a + " ");
+        document.write( "<br> ");
+        a[1] = 20;
+        document.write(a + " ");
+        document.write( "<br> ");
+        delete a[0];
+        document.write(a + "<br> ");
+        a.sort();
+        document.write(a + "<br> ");
+        a.reverse();
+        document.write(a + "<br> ");
+        a.push("adeel");
+        document.write(a + "<br> ");
+        a.pop();
+        document.write(a + "<br> ");
+        a.unshift("adeel");
+        document.write(a + "<br> ");
+        a.shift();
+        document.write(a + "<br> ");
+        var b = ["haroon", 18];
+        var c = a.concat(b);
+        document.write(c + "<br> ");
+        var d = c.join("@");
+        document.write(d + "<br> ");
+         var z =a.slice(2,3);
+        document.write(z + "<br> ");
+         c.splice(2,0,"adeel");
+        document.write(c + "<br> ");
+        if(Array.isArray(c)){
+            document.write("this is an array");
+        }else{
+            document.write("this is not an array");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
